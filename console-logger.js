@@ -12,7 +12,7 @@ class ConsoleLogger extends Logger{
 
     log(message, level = this.defaultLevel) {
         if (level === 'LOG') console.log(this.format(message, level));
-        else if if (level === 'INFO') console.info(this.format(message, level));
+        else if (level === 'INFO') console.info(this.format(message, level));
         else if (level === 'WARN') console.warn(this.format(message, level));
         else if (level === 'ERROR') console.error(this.format(message, level));
         else console.log(this.format(message, this.defaultLevel));
